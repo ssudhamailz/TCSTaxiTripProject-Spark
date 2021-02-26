@@ -18,9 +18,9 @@ import org.apache.spark.sql._
 
 object DataProcessingandFrequentRoutes {
   
-     def main(args: Array[String]): Unit = {
-
-    val spark: SparkSession = SparkSession.builder()
+    /* def main(args: Array[String]): Unit = {
+             
+     val spark: SparkSession = SparkSession.builder()
       .master("local[*]")
       .appName("ProcessData")
       .getOrCreate()
@@ -206,5 +206,6 @@ object DataProcessingandFrequentRoutes {
       //output.write.option("header","true").mode("overwrite").mode(SaveMode.Append).csv("file:///D:/TCS/OUTPUT")
       output.write.option("header","true").mode("overwrite").csv(FinalOutputPath)
   }
-  
+  * */
+    
 }
